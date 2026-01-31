@@ -10,8 +10,8 @@ body
 }
 #para 
 {
-    
-  font-size: large;
+    align-items:centre;
+    font-size: large;
     text-align: center;
     color: rgb(255, 0, 0);
      /* background-color:rgb(103, 253, 3); */
