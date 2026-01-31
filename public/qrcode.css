@@ -5,7 +5,7 @@ body
    background-image:url("1769611521438.png"); 
    /* background-color:rgb(103, 253, 3);
    background: linear-gradient(90deg,rgb(213, 224, 206) 14%, rgb(46, 102, 97) 90%); */
-   align-items: center;
+   align-items: auto;
 
 }
 #para 
