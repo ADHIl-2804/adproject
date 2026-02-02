@@ -91,11 +91,7 @@ label {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
  }
- .box
- {
-    color: aliceblue;
- }
-
+ 
 #booking
 {
   background-color:cyan; 
@@ -104,7 +100,8 @@ label {
 .box
 {
   background-color: cyan;
-  color: rgb(255, 255, 255);}
+  
+}
 
 .token
 {
