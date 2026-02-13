@@ -1,21 +1,22 @@
-// Import the functions you need from the SDKs you need
+// firebase.js
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Firebase configuration from .env
 const firebaseConfig = {
-  apiKey: "AIzaSyBnOSzI7H1G2l4onrPv_v95qg5bJ7PzA_Q",
-  authDomain: "bill-booking-slot.firebaseapp.com",
-  projectId: "bill-booking-slot",
-  storageBucket: "bill-booking-slot.firebasestorage.app",
-  messagingSenderId: "527942471394",
-  appId: "1:527942471394:web:0b17b9387df6111f8c98bb",
-  measurementId: "G-3GPXKP5E0N"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Initialize Analytics (only works in browser)
 const analytics = getAnalytics(app);
+
+export { app, analytics };

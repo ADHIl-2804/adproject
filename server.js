@@ -1,3 +1,9 @@
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+
 const express = require("express");
 const admin = require("firebase-admin");
 const app = express();

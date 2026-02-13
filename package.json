@@ -1,17 +1,19 @@
 {
+  "name": "adproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^5.2.1",
     "firebase-admin": "^13.6.0"
   },
-  "name": "adproject",
-  "version": "1.0.0",
-  "description": "",
-  "main": "ads.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "license": "ISC"
 }

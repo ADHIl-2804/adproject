@@ -3,10 +3,10 @@ body
 {
   max-height:100%;
   max-width:100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background: position 100%;
-  background-image:url("billingslot.png");
+  /*background-repeat: no-repeat;*/
+  background-size:cover;
+  background-position: 100%;
+  background-image:url("1769611521438.png");
   /* background-color:rgb(103, 253, 3);
   background: linear-gradient(90deg,rgb(213, 224, 206) 14%, rgb(46, 102, 97) 90%);
   align-items: center; */
@@ -16,7 +16,7 @@ body
  {
     
      align-items: center;
-     background-color:transparent 100%;background-color: rgb(71, 69, 69);
+     background-color:transparent;background-color: rgb(71, 69, 69);
       /* background: linear-gradient(144deg,rgb(0, 248, 194) 49%, rgb(103, 253, 3) 10%); */
      max-width: 300px;
      max-height:500px ;
@@ -67,13 +67,13 @@ body
   );
 }
 label {
-         margin-top: 12px;;
+         margin-top: 12px;
 }
 
 .token
  {
    max-height:10px;
-   padding :25px ;
+   padding: 25px;
 
  }
  #generate_token 

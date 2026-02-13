@@ -1,8 +1,9 @@
 body
 {
+   
    background-position: center;
    background-size: cover;
-   background-image:url("billingslot.png"); 
+   background-image:url("1769611521438.png"); 
    /* background-color:rgb(103, 253, 3);
    background: linear-gradient(90deg,rgb(213, 224, 206) 14%, rgb(46, 102, 97) 90%); */
    align-items: center;
@@ -10,8 +11,9 @@ body
 }
 #para 
 {
-    
-  font-size: large;
+     
+    align-items: center;
+    font-size: large;
     text-align: center;
     color: rgb(255, 0, 0);
      /* background-color:rgb(103, 253, 3); */
@@ -37,8 +39,18 @@ body
 }
 #qrcode
 {
-    margin-left: 35%;
+    
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 20px;
 }
 #downloadbutton{
   align-items: center;
 }
+.qrcode {
+  
+  display: flex;
+   align-items:center;
+  }
