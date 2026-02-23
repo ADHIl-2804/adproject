@@ -1,24 +1,4 @@
-// const submit= document.getElementById("generate_token")
 
-
-
-
-// submit.addEventListener("click",()=>{
-    
-// })
-// function generateUniqueToken(data) {
-//     return btoa(
-//         data.name +
-//         data.email +
-//         data.number +
-//         data.date +
-//         data.booking +
-//         Date.now()
-//     );
-// }
-// function getRandomInt(){
-//     return Math.round(Math.random()*10000000000);
-// }
 function generateUniqueQR(data) {
   const key = `qr_${data.email}`;  // unique key per email
 
@@ -70,26 +50,6 @@ function generateQRCode() {
   });
 }
 
-// function generateQRCode() {
-//   const data = {
-//     username: document.getElementById('name').value,
-//     email: document.getElementById('email').innerText,
-//     number: document.getElementById('number').innerText,
-//     date: document.getElementById('date').innerText,
-//     booking: document.getElementById('booking').innerText,
-//   };
-
-//   const qrData = generateUniqueQR(data);
-
-//   const qrContainer = document.getElementById("qrcode");
-//   qrContainer.innerHTML = "";
-
-//   new QRCode(qrContainer, {
-//     text: JSON.stringify(qrData),
-//     width: 180,
-//     height: 180,
-//   });
-// }
 
 const urlparams = new URLSearchParams(window.location.search);
 const name=urlparams.get('name');
@@ -134,17 +94,9 @@ localStorage.setItem("bookings", JSON.stringify(bookings));
 
 
 
-//console.log(getRandomInt())
-// const value=getRandomInt().toString()
+
 console.log(value)
-// const qrcode=new QRCode(document.getElementById("qrcode"),{
-//     width:128,
-//     height:128,
-//     colorDark:"#000000ff",
-//     colorLight:"#ffffffff",
-//     correctLevel:QRCode.CorrectLevel.H
-// });
-//  qrcode.makeCode(value);
+
 function downloadDiv() {
     const element = document.getElementById("para"); 
     html2canvas(element).then(canvas => {
@@ -155,14 +107,3 @@ function downloadDiv() {
     });
 }
 
-// const serviceAccount = require("../serviceAccountKey.json");
-
-
-
-// // Firestore reference
-// const db = admin.firestore();
-
-// Optional: Realtime Database
-// const db = admin.database();
-
-// console.log("Firebase connected successfully")
