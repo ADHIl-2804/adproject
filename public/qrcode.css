@@ -1,7 +1,11 @@
 *{
+    
     margin:0;
     padding:0;
     box-sizing:boeder-box;
+}
+body{
+    background-color:black;
 }
 .navbar{
     display:flex;
