@@ -46,9 +46,9 @@ body
 #para 
 {
      
-    align-items: center;
-    font-size: large;
-    text-align: center;
+    align-items: auto;
+    /* font-size: large; */
+    text-align: auto;
     color: rgb(255, 0, 0);
      /* background-color:rgb(103, 253, 3); */
      background-color:transparent;
@@ -88,3 +88,61 @@ body
   display: flex;
    align-items:center;
   }
+@media (max-width: 480px) {
+  
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem; /* Slightly smaller logo */
+  }
+
+  .nav-links {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Smaller links for mobile */
+  }
+
+  /* Hero adjustments */
+  .hero-content h1 {
+    font-size: 2.2rem; /* Scale down heading significantly */
+  }
+
+  .hero-content p {
+    font-size: 1.05rem; /* Scale down paragraph */
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 14px 28px;
+  }
+
+  /* Content & Grid adjustments */
+  .main-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 1.25rem;
+  }
+}
