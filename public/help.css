@@ -57,36 +57,32 @@ body {
   color: #3498db;
 }
 
-/* --- Responsive Grid Container (.helph) --- */
+
 .helph {
   display: grid;
-  /* AUTOMATIC RESPONSIVENESS: 
-     If screen is wide, it fits 2 columns. 
-     If screen is narrow (< 640px), it forces 1 column. */
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin: 40px auto; /* Centers the container */
-  width: 90%; /* Keeps it from hitting edges on mobile */
-  max-width: 1200px; /* Prevents it from getting too wide on huge screens */
+  margin: 40px auto; 
+  width: 90%; 
+  max-width: 1200px;
 }
 
-/* --- Cards --- */
+
 .card {
   padding: 30px;
-  background: #f8f9fa;
+  background: #0d0d0e;
   border-left: 6px solid #3498db;
-  border-radius: 8px; /* Slightly smoother corners */
-  transition: transform 0.3s ease; /* Adds hover animation */
-}
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
 
-.card:hover {
-  transform: translateY(-5px); /* Subtle lift effect on hover */
-}
+.  transform: translateY(-5px);
+
 
 .card h3 {
   font-size: 1.4rem;
   margin-bottom: 15px;
-  color: #2c3e50;
+  color: #222324;
 }
 
 .card p {
@@ -95,10 +91,10 @@ body {
   line-height: 1.6;
 }
 
-/* --- Mobile Specific Adjustments --- */
+
 @media (max-width: 768px) {
   
-  /* Stack Navbar elements vertically */
+  
   .navbar {
     flex-direction: column;
     padding: 1rem;
@@ -108,7 +104,7 @@ body {
   .nav-links {
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap; /* Allows links to wrap if screen is very tiny */
+    flex-wrap: wrap; 
     gap: 15px;
   }
 
@@ -117,9 +113,9 @@ body {
     margin-right: 10px;
   }
   
-  /* Adjust Grid spacing for mobile */
+  
   .helph {
-    grid-template-columns: 1fr; /* Force single column on phones */
+    grid-template-columns: 1fr; 
     gap: 20px;
     margin: 20px auto;
   }

@@ -38,8 +38,7 @@ body
    background-position: center;
    background-size: cover;
    background-image:url("1769611521438.png"); 
-   /* background-color:rgb(103, 253, 3);
-   background: linear-gradient(90deg,rgb(213, 224, 206) 14%, rgb(46, 102, 97) 90%); */
+   
    align-items: center;
 
 }
@@ -47,12 +46,12 @@ body
 {
      
     align-items: auto;
-    /* font-size: large; */
+    
     text-align: auto;
     color: rgb(255, 0, 0);
-     /* background-color:rgb(103, 253, 3); */
+     
      background-color:transparent;
-      /* background: linear-gradient(144deg,rgb(0, 248, 194) 49%, rgb(103, 253, 3) 10%);*/
+      
      max-width: 20%; 
      max-height:60%;
      margin: auto;
@@ -90,14 +89,14 @@ body
   }
 @media (max-width: 480px) {
   
-  /* Navbar adjustments */
+  
   .navbar {
     flex-direction: column;
     padding: 1.5rem 1rem;
   }
 
   .logo {
-    font-size: 1.2rem; /* Slightly smaller logo */
+    font-size: 1.2rem; 
   }
 
   .nav-links {
@@ -111,16 +110,16 @@ body
   }
 
   .nav-links a {
-    font-size: 0.9rem; /* Smaller links for mobile */
+    font-size: 0.9rem; 
   }
 
-  /* Hero adjustments */
+ 
   .hero-content h1 {
-    font-size: 2.2rem; /* Scale down heading significantly */
+    font-size: 2.2rem; 
   }
 
   .hero-content p {
-    font-size: 1.05rem; /* Scale down paragraph */
+    font-size: 1.05rem; 
   }
 
   .cta-button {
@@ -128,13 +127,13 @@ body
     padding: 14px 28px;
   }
 
-  /* Content & Grid adjustments */
+  
   .main-content h2 {
     font-size: 1.8rem;
   }
 
   .info-grid {
-    grid-template-columns: 1fr; /* Stack columns on mobile */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 

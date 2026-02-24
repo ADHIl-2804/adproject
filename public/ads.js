@@ -1,24 +1,23 @@
 
 function generateUniqueQR(data) {
-  const key = `qr_${data.email}`;  // unique key per email
-
-  // If QR already exists, return it
+  const key = `qr_${data.email}`; 
+  
   const existingQR = localStorage.getItem(key);
   if (existingQR) {
     return JSON.parse(existingQR);
   }
 
-  // Create new QR data (you can also hash it)
+  
   const qrData = JSON.stringify({
     username: data.name,
     email: data.email,
     number: data.number,
     date: data.date,
     booking: data.booking,
-    token: crypto.randomUUID()  // unique token
+    token: crypto.randomUUID()  
   });
 
-  // Save in local storage
+  
   localStorage.setItem(key,JSON.stringify(qrData));
 
   return qrData;
@@ -27,25 +26,25 @@ function generateUniqueQR(data) {
 
 
 function generateQRCode() {
-  // USE THE URL VARIABLES WE CAPTURED ALREADY
+  
   const data = {
-    name: name,      // Uses the 'name' variable from URL
-    email: email,    // Uses the 'email' variable from URL
+    name: name,     
+    email: email,   
     number: number,
     date: date,
     booking: booking
   };
 
-  // Pass this data to your unique generator
+ 
   const qrData = generateUniqueQR(data);
 
   const qrContainer = document.getElementById("qrcode");
-  qrContainer.innerHTML = ""; // Clear container just in case
+  qrContainer.innerHTML = ""; 
 
-  // This library automatically creates the <img> tag inside your div
+  
   new QRCode(qrContainer, {
-    text: qrData, // qrData is already a JSON string from your function
-    width: 100,
+    text: qrData, 
+        width: 100,
     height: 100,
   });
 }
@@ -57,19 +56,19 @@ const email=urlparams.get('email');
 const number=urlparams.get('number');
 const date=urlparams.get('date');
 const booking=urlparams.get('booking');
-// const slotkey = `${date}_${booking}`;
+
 
 const slotkey =`${date}_${booking}`;
 const userkey = `${email}_${date}_${booking}`;
 let bookings = JSON.parse(localStorage.getItem("bookings"))||{};
-bookings[slotkey]=bookings[slotkey]||[]; // get storage
+bookings[slotkey]=bookings[slotkey]||[]; 
 
-//Limit Check (max 3)
+
 
 
 if(bookings[slotkey].includes(userkey)){
     alert(" you already have a token for this slot !");
-    window.location.href="ads.html";//GO BACK 
+    window.location.href="ads.html"; 
 }else if(bookings[slotkey].length>=3){
   alert("This slot is already full (only 3 allowed)");
   window.location.href = "ads.html";
@@ -89,7 +88,7 @@ document.getElementById('displayusername').textContent ='name: ' +name;
 
 generateQRCode();
 
-//localStorage.setItem("bookings",json.stringify(bookings));
+
 localStorage.setItem("bookings", JSON.stringify(bookings));
 
 

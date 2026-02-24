@@ -1,4 +1,4 @@
-/* --- Global Reset & Typography --- */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +9,14 @@
 body {
   line-height: 1.6;
   color: #333;
-  /* A stylish, modern gradient background */
+  
   background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* --- Navbar --- */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@ body {
   color: #3498db;
 }
 
-/* --- Contact Section Layout --- */
+
 .contact-container {
   flex: 1;
   display: flex;
@@ -72,7 +72,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   width: 100%;
-  max-width: 500px; /* Limits width on large screens */
+  max-width: 500px; 
 }
 
 #heading {
@@ -82,7 +82,7 @@ body {
   font-size: 1.8rem;
 }
 
-/* --- Form Styling --- */
+
 .input-group {
   margin-bottom: 1.2rem;
 }
@@ -104,7 +104,7 @@ body {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Highlight input fields when the user clicks them */
+
 .input-group input:focus,
 .input-group textarea:focus {
   outline: none;
@@ -112,7 +112,7 @@ body {
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
 }
 
-/* Resize only vertically for text areas */
+
 .input-group textarea {
   resize: vertical;
 }
@@ -135,10 +135,9 @@ body {
 }
 
 .submit-btn:active {
-  transform: scale(0.98); /* Satisfying little click effect */
-}
+  transform: scale(0.98); 
 
-/* --- Mobile Responsiveness --- */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

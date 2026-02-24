@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    /* New Stylish Background: Abstract dark mesh with cyan hints */
+
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop');
     background-size: cover;
@@ -19,7 +18,7 @@ body {
     color: #ffffff;
 }
 
-/* Glassy Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -60,7 +59,7 @@ body {
 
 .nav-links a:hover { color: #00f2fe; }
 
-/* The Container - Advanced Glassmorphism */
+
 .container {
     margin: 60px auto;
     width: 90%;
@@ -70,7 +69,7 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(2, 2, 2);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.8s ease-out;
 }
@@ -90,14 +89,13 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Labels & Inputs */
 label {
     display: block;
     margin-top: 20px;
     font-size: 0.75rem;
     letter-spacing: 1.5px;
     font-weight: 700;
-    color: #00f2fe !important; /* Forces the cyan accent */
+    color: #00f2fe !important;
 }
 
 .box, #booking {
@@ -112,7 +110,7 @@ label {
     transition: all 0.3s ease;
 }
 
-/* Glow effect on focus */
+
 .box:focus, #booking:focus {
     outline: none;
     background-color: rgba(255, 255, 255, 0.15) !important;
@@ -120,13 +118,13 @@ label {
     box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
 }
 
-/* Style the dropdown options */
+
 #booking option {
     background-color: #1a1a1a;
     color: white;
 }
 
-/* Generate Token Button */
+
 .token {
     margin-top: 40px;
     padding: 0;
@@ -151,7 +149,7 @@ label {
     box-shadow: 0 0 20px rgba(79, 172, 254, 0.6);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar { padding: 1rem 5%; }
     .nav-links li { margin-left: 15px; }
@@ -159,7 +157,3 @@ label {
     .container { margin: 30px auto; padding: 30px 20px; }
 }
 
-@media (max-width: 480px) {
-    .nav-links a { font-size: 0.7rem; }
-    #head { font-size: 1.5rem; }
-}
