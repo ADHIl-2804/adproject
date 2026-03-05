@@ -90,7 +90,7 @@ body
 @media (max-width: 480px) {
   
   
-  .navbar {
+.navbar {
     flex-direction: column;
     padding: 1.5rem 1rem;
   }
@@ -111,7 +111,7 @@ body
 
   .nav-links a {
     font-size: 0.9rem; 
-  }
+    }
 
  
   .hero-content h1 {
